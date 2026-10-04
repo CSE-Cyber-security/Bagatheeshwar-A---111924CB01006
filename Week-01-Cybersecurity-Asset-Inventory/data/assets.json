@@ -1,0 +1,22 @@
+[
+    {
+        "asset_id": "A102",
+        "asset_name": "Web-Server",
+        "asset_type": "Server",
+        "ip_address": "192.168.1.20",
+        "os": "Windows 11",
+        "department": "IT",
+        "risk_level": "Critical",
+        "status": "Vulnerable"
+    },
+    {
+        "asset_id": "A103",
+        "asset_name": "Core-Router",
+        "asset_type": "Router",
+        "ip_address": "192.168.1.1",
+        "os": "Cisco IOS",
+        "department": "Network",
+        "risk_level": "High",
+        "status": "Warning"
+    }
+]
