@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9zM9 14l2 2 4-4"/></svg>
+      <div>
+        <h1>To-Do List</h1>
+        <p>Plan &bull; Do &bull; Achieve</p>
+      </div>
+    </header>
+
+    <form id="task-form" class="add-row" autocomplete="off">
+      <input id="task-input" type="text" placeholder="Enter a new task..." aria-label="New task" maxlength="100">
+      <button type="submit" class="btn-add"><span aria-hidden="true">+</span> Add Task</button>
+    </form>
+    <p id="error" class="error" role="alert" hidden></p>
+
+    <div class="toolbar">
+      <div class="filters" role="group" aria-label="Filter tasks">
+        <button class="filter active" data-filter="all">All (0)</button>
+        <button class="filter" data-filter="pending">Pending (0)</button>
+        <button class="filter" data-filter="done">Completed (0)</button>
+      </div>
+      <p class="counts"><span id="pending-count">0 pending</span><span id="done-count" class="done">0 completed</span></p>
+    </div>
+
+    <ul id="task-list" class="task-list"></ul>
+    <footer>Small steps make big goals!</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

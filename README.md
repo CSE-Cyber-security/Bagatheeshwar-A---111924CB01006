@@ -1,37 +1,48 @@
-# Weekly Mini Projects / GitHub Tasks
+# To-Do List Application
 
-This repository holds my weekly mini project submissions. Each week
-gets its own folder containing the Python program, a README
-explaining it, and a screenshot of the program running.
+A simple task manager built with **HTML, CSS and vanilla JavaScript** for the GitHub Week 4 task.
 
-## Contents
+## Objective
+Practise web development, JavaScript DOM manipulation and GitHub version control by building a page where users manage their daily activities.
 
-| Week | Folder | Problem |
-|------|--------|---------|
-| 1 | [`Week-01-Cybersecurity-Asset-Inventory`](./Week-01-Cybersecurity-Asset-Inventory) | Cybersecurity asset inventory system - add, search, update, delete and display IT assets, with a risk summary |
-| 2 | [`week-02-factorial`](./week-02-factorial) | Find the factorial of a given number |
-| 3 | [`week-03-fibonacci`](./week-03-fibonacci) | Print the Fibonacci series for n terms |
+## Features
+- Add a task (button click or Enter key), with validation for empty and duplicate tasks
+- Mark a task as completed or pending (checkbox or green tick button)
+- Delete a task (red bin button)
+- Filter by **All / Pending / Completed**, with live counts
+- Tasks are saved in the browser (`localStorage`), so they survive a refresh
+- Responsive layout, keyboard focus styles, and safe rendering (`textContent`, no HTML injection)
 
-Each folder has its own README with the exact problem statement, how
-to run it, and any notes on edge cases.
-
-## Tech used
-- Python 3
-- Standard library only (`json`, `os`) - no external packages
-  needed for any of these
-
-## How to run any week's program
+## Project Structure
 ```
-cd <week-folder>/src      # Week 1 keeps the program inside src/
-python3 <filename>.py
-
-# or for weeks without a src/ folder:
-cd <week-folder>
-python3 <filename>.py
+To-Do-List-Application/
+├── index.html      # Page structure
+├── style.css       # Styling and responsive layout
+├── script.js       # Add / complete / delete / filter logic
+├── README.md
+└── screenshots/    # Output screenshots
 ```
 
-Each program will prompt for input directly in the terminal.
+## How to Run
+1. Clone the repository and open the `week-4` branch.
+2. Open `index.html` in any browser. No build step or dependencies are needed.
 
-## About
-Submissions for my cybersecurity coursework, one task per week. More
-weeks will be added here as they're completed.
+## Output Screenshots
+| Empty state | Validation message |
+|---|---|
+| ![Empty](screenshots/01-empty-state.png) | ![Validation](screenshots/02-validation-error.png) |
+
+| Tasks added | Tasks completed |
+|---|---|
+| ![Added](screenshots/03-tasks-added.png) | ![Completed](screenshots/04-tasks-completed.png) |
+
+| Pending filter | Completed filter | After delete |
+|---|---|---|
+| ![Pending](screenshots/05-pending-filter.png) | ![Done](screenshots/06-completed-filter.png) | ![Deleted](screenshots/07-after-delete.png) |
+
+## How It Works
+- `script.js` keeps a `tasks` array of `{ id, text, done }` objects.
+- Every action (add, toggle, delete, filter) updates the array, saves it, and calls `render()`, which rebuilds the list in the DOM.
+
+## Author
+Bagatheeshwar A
