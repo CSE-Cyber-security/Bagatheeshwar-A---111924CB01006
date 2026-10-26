@@ -30,15 +30,15 @@ To-Do-List-Application/
 ## Output Screenshots
 | Empty state | Validation message |
 |---|---|
-| ![Empty](screenshots/01-empty-state.png) | ![Validation](screenshots/02-validation-error.png) |
+| ![Empty](Output_screenshot/01-empty-state.png) | ![Validation](Output_screenshot/02-validation-error.png) |
 
 | Tasks added | Tasks completed |
 |---|---|
-| ![Added](screenshots/03-tasks-added.png) | ![Completed](screenshots/04-tasks-completed.png) |
+| ![Added](Output_screenshot/03-tasks-added.png) | ![Completed](Output_screenshot/04-tasks-completed.png) |
 
 | Pending filter | Completed filter | After delete |
 |---|---|---|
-| ![Pending](screenshots/05-pending-filter.png) | ![Done](screenshots/06-completed-filter.png) | ![Deleted](screenshots/07-after-delete.png) |
+| ![Pending](Output_screenshot/05-pending-filter.png) | ![Done](Output_screenshot/06-completed-filter.png) | ![Deleted](Output_screenshot/07-after-delete.png) |
 
 ## How It Works
 - `script.js` keeps a `tasks` array of `{ id, text, done }` objects.
