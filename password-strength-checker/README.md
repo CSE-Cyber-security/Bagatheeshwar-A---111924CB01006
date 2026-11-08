@@ -121,8 +121,7 @@ password-strength-checker/
 │   ├── gui.py               # Tkinter desktop interface
 │   └── data/                # common_passwords.txt, words.txt (+ licences)
 ├── tests/                   # unittest suite (36 tests)
-├── docs/screenshot.png
-└── .github/workflows/tests.yml
+├── Scr/screenshot.png
 ```
 
 ## Running the tests
@@ -147,7 +146,3 @@ python -m unittest discover -s tests -v
 - Common passwords: [SecLists](https://github.com/danielmiessler/SecLists) (MIT).
 - English words: [google-10000-english](https://github.com/first20hours/google-10000-english).
 - Breach data: [Have I Been Pwned](https://haveibeenpwned.com/API/v3#PwnedPasswords) range API.
-
-## License
-
-MIT - see [LICENSE](LICENSE). Replace `YOUR NAME` with your name before publishing.
