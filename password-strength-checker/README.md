@@ -6,7 +6,7 @@ and tells you how to fix it - in a desktop GUI or in the terminal.
 
 > **Course:** _your course name_ &nbsp;|&nbsp; **Assignment:** Week 05 &nbsp;|&nbsp; **Author:** _your name_
 
-![GUI screenshot](docs/screenshot.png)
+![GUI screenshot](Scr/screenshot.png)
 
 ## Features
 
